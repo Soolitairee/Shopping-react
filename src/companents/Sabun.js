@@ -124,7 +124,7 @@ function Sabun() {
 
           <div className='fairy'>
             {
-              sabun && [...sabun].splice(0, 4).map(index => (
+              sabun && [...sabun].splice(4,8).map(index => (
                 <SwiperSlide>
                   <div className='fairy-head' key={index}>
                     <div className="fairy-img">

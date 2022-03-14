@@ -125,7 +125,7 @@ const dispatch = useDispatch()
     
       <div className='fairy'>
         {
-          ace && [...ace].splice(0,4).map(index => (
+          ace && [...ace].splice(4,8).map(index => (
             <SwiperSlide>
             <div className='fairy-head' key={index}>
               <div className="fairy-img">

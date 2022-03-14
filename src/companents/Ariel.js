@@ -126,7 +126,7 @@ function Ariel() {
     
       <div className='fairy'>
         {
-          ari && [...ari].splice(0,4).map(index => (
+          ari && [...ari].splice(4,8).map(index => (
             <SwiperSlide>
             <div className='fairy-head' key={index}>
               <div className="fairy-img">

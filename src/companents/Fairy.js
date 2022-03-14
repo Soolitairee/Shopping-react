@@ -125,7 +125,7 @@ function Fairy() {
 
           <div className='fairy'>
             {
-              fair && [...fair].splice(0, 4).map(index => (
+              fair && [...fair].splice(4,8).map(index => (
                 <SwiperSlide>
                   <div className='fairy-head' key={index}>
                     <div className="fairy-img">

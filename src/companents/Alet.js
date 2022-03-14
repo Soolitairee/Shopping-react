@@ -137,7 +137,7 @@ function Alet() {
 
           <div className='fairy'>
             {
-              alet && [...alet].splice(0, 4).map((index,key) => (
+              alet && [...alet].splice(4,8).map((index,key) => (
                 <SwiperSlide key={key}>
                   <div className='fairy-head'>
                     <div className="fairy-img">
