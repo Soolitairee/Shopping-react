@@ -19,9 +19,7 @@ return y
     }
   return (
     <div className="container">
-      <div className="hesabla">
-        <h1>Qiymət: {hesabla()}</h1>
-      </div>
+      
     <div className='bask'>
       {
         bask && bask.map(index => (
@@ -32,10 +30,13 @@ return y
                      <img src={index.image} alt="" />
                      </Link>
             </div>
+            <div className="bask-sifaris">
+            <p>Sifarişiniz {index.quantity} ədəd</p>
+            </div>
             <div className='bask-name'>
               <h5>{index.name}</h5>
               <p>Qiymət:{index.price}₼</p>
-              <p>Sifarişiniz {index.quantity} ədəd</p>
+              
               <div className='bask-sil'>
                 <button onClick={()=> handlSil (index.id)}>Sil</button>
               </div>
@@ -45,6 +46,9 @@ return y
         ))
       }
       
+      </div>
+      <div className="hesabla">
+        <h1>Qiymət: {hesabla().toFixed(2)}₼</h1>
       </div>
   </div>
   )
