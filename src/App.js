@@ -40,7 +40,6 @@ function App() {
   .then(res => {
     
     dispatch({type:"ADD_ALET",payload:res})
-    dispatch({type:"REPAIR_TOOLS",payload:res})
   })
 
   axios.get("http://localhost:3004/ace")
@@ -57,7 +56,7 @@ function App() {
     <div className="App">
      <Header/>
      <Routes>
-       <Route path='/' element={<Home/>}/>
+       <Route path='/Shopping-react' element={<Home/>}/>
        <Route path='/Register' element={<Register/>}/>
        <Route path='/Login' element={<Login/>}/>
        <Route path='/Wishlist' element={<Wishlist/>}/>

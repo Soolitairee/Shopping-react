@@ -50,7 +50,7 @@ function Header() {
             <div className="container">
                 <div className="Head">
                     <div className='logo-head'>
-                      <NavLink to="/">  <img src={Logo} width={"50px"} height={"50px"} alt="" /></NavLink>
+                      <NavLink to="/Shopping-react">  <img src={Logo} width={"50px"} height={"50px"} alt="" /></NavLink>
                     </div>
                     <div className="search">
                         <input 
